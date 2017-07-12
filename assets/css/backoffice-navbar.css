@@ -1,0 +1,68 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Roboto");
+    height:100% !important;
+    width:100% !important;
+    position:absolute;
+    overflow-x:hidden;
+    top:0;
+}
+
+.sidenavbar {
+    position:absolute !important;
+    background-color:rgb(34,34,34) !important;
+    width:250px !important;
+    height:100% !important;
+    float:left !important;
+    text-align:justify !important;
+    padding-top:5px !important;
+    margin:0 !important;
+    top:0;
+    bottom:0;
+}
+
+.sidenavlist {
+    list-style:none;
+    position:relative;
+}
+
+.sidenavldiv{
+    height:30px;
+    background-color:rgb(34,34,34);
+    left: -30px;
+}
+
+.sidenavlitem {
+    position:relative;
+    vertical-align:middle;
+    color:white;
+    line-height:30px;
+}
+
+.menulink{
+    text-decoration : none;
+    color:#ccc;
+    width: 253.3px;
+}
+
+.menulink:hover {
+    text-decoration : none;
+    color:white;
+    width: 253.3px;
+}
+
+.sidenavldiv:hover,
+.sidenavldiv:hover a {
+    width: 253.3px;
+    position: relative;
+    text-align:center;
+    height:30px;
+    background-color:rgb(64,64,64);
+    cursor:pointer;
+    text-decoration : none;
+    color:white;
+}
+
+#content {
+    overflow-y:scroll !important;
+}

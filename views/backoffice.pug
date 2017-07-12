@@ -1,0 +1,16 @@
+extends boffice
+
+append content
+    div(style="position: absolute;left:38%")
+        h1 Wellcome to Back Office, #{user.firstName} #{user.lastName}
+        br
+        img(id="procpic",src=user.picurl || 'https://openclipart.org/download/247319/abstract-user-flat-3.svg', class="avatar img-circle img-thumbnail", alt="avatar", style="height:150px;width:150px;margin-left:190px;border:5px solid;")
+        br
+        br
+        br
+        br
+        div(style="margin-left:50px")
+            p In Profile, you will be able to view, edit or delete your account.
+            p In Manage Users, you will be able to view, add, edit or delete users.
+            p In Manage Games, you will be able to view, add, edit or delete all games.
+            p In logout you will be signed out of your account.

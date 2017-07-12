@@ -1,0 +1,55 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Roboto");
+    overflow-x:hidden;
+}
+
+.dropdown-menu {
+    display:none;
+    margin-top:0px;
+    width:180px;
+    text-align:justify;
+}
+
+#navbarwidth{
+    width:100% !important;
+    position:absolute;
+    left:0 !important;
+    right:0 !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display:block;
+}
+
+.dropdown-menu:hover {
+    display:block;
+}
+
+.dropdown-open {
+    cursor:pointer;
+}
+
+.caret {
+    display: inline-block !important;
+    width: 0;
+    height: 0;
+    vertical-align: text-top;
+    border-top: 4px solid #999;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.icon-white{
+    color:white;
+}
+
+.caret:hover {
+    display: inline-block !important;
+    width: 0;
+    height: 0;
+    vertical-align: text-top;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}

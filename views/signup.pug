@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+head
+    meta(charset="utf-8")
+    title='Sign Up - Pplware'
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    block styles
+        link(href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css",rel="stylesheet")
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+        style
+            include ../assets/css/login.css
+    block scripts
+        script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+body(style="background-color:#222;color:#fff;")
+div(class="container", style="padding-top: 80px;text-align:center;width:500px;")
+    form(action="/signup",class="form-horizontal", method="post", id="userprof")
+         div(class="col-md-8 col-sm-6 col-xs-12 personal-info")
+            img(src="http://rawgit.com/start-angular/SB-Admin-BS4-Angular-4/master/dist/assets/images/logo.png",class="login-page user-avatar",width="150px")
+            br
+            br
+            h3 Create your account
+            div(class="form-content")
+                div(class="form-group")
+                    input(class="form-control input-underline input-lg", placeholder="Username", name="username", type="text")
+                div(class="form-group")
+                    input(class="form-control input-underline input-lg", placeholder="Password", type="password",name="password",id="pass",onkeyup="verificaPass()")
+                div(class="form-group")
+                    input(class="form-control input-underline input-lg", placeholder="Confirm Password", type="password",name="confirmPass",id="confirmPass",onkeyup="verificaPass()",style="margin-bottom:5px;")
+                div(class="form-group")
+                    input(class="form-control input-underline input-lg", placeholder="Email", name="email", type="text")
+                label(style="display:none;margin-bottom:-10px;",id="confirmMessage") Message: 
+                br
+                div(class="form-group")
+                    div(class="col-md-8",style="display:inline-block")
+                        input(class="btn rounded-btn", value="Register", type="submit")
+                        span &nbsp;&nbsp;&nbsp;
+                        a(class="btn home-btn",href="/") X
+                    
+script
+    include ../assets/scripts/signup.js
